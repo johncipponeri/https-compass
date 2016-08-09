@@ -1,0 +1,432 @@
+.large #mobile-search, .xlarge #mobile-search, .huge #mobile-search {
+	display: none;
+}
+
+/* ALL TABLES */
+table {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+thead {
+  background-color: white !important;
+}
+
+tr:nth-child(even) {
+  background-color: white !important;
+}
+
+td {
+  color: #000 !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  /*font-size: 18px;*/
+}
+
+td img {
+  vertical-align: none !important;
+  margin-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+td.top {
+	vertical-align: inherit !important;
+}
+
+/*h4 {
+	text-align: center;
+	width: 100%;
+	display: none;
+}*/
+
+.small h4,
+.tiny h4 {
+	display: block;
+	color: #2066AD;
+}
+
+.head1 {
+	font-size: 30px;
+}
+
+#customBack,
+#customBackOne,
+#customForward,
+#customForwardOne {
+	color: #039be5;
+}
+
+#customBackOne,
+#customForwardOne {
+	width: 5.4%;
+	overflow: hidden;
+}
+
+#contentRow > table td {
+	padding: 40px;
+}
+
+.taleo_img {
+	background-image: url(http://tbe.taleo.net/graphics/Taleo_powered_by_small.gif);
+	background-repeat: no-repeat;
+	width: 91px;
+	height: 36px;
+	margin-left: calc(50% - 45px);
+	margin-top: 10px;
+}
+
+.alert-error,
+#errors {
+	font-size: 18px;
+	margin-left: calc(50% + 15px);
+}
+
+.medium .alert-error,
+.medium #errors,
+.small .alert-error,
+.small #errors,
+.tiny .alert-error,
+.tiny #errors {
+	margin-left: 15px;
+}
+
+#bdiv {
+	padding: 40px;
+	width: 950px;
+}
+
+.medium #bdiv,
+.small #bdiv,
+.tiny #bdiv {
+	padding: 15px;
+	width: 100%;
+}
+
+h1 {
+    font-size: 2.28em;
+}
+
+.medium .career_form_box,
+.small .career_form_box,
+.tiny .career_form_box {
+	width: 100% !important;
+	height: 340px;
+	padding: 15px;
+}
+
+.medium .searchForm,
+.small .searchForm,
+.tiny .searchForm {
+	height: 300px;
+}
+
+.medium #career_form_btnSearch,
+.small #career_form_btnSearch,
+.tiny #career_form_btnSearch {
+	margin-top: 10px !important;
+}
+
+.jobdesc_login {
+	width: 80%;
+}
+
+#cws-search-results {
+	margin-left: -60px;
+    width: calc(100% + 115px);
+}
+#cws-search-results td {
+	padding: 0px !important;
+}
+
+tr ul li {
+	margin-left: 20px;
+}
+
+td[nowrap],
+td.nowrap {
+	padding: 0px !important;
+}
+
+input[value="Apply for this Position"] {
+	margin-bottom: 10px;
+}
+
+footer {
+	padding: 0 !important;
+}
+
+/*select {
+	display: block;
+}
+
+.searchForm {
+	margin-right: 5px;
+	padding: 50px;
+	background-color: #E8E8E8;
+	height: 300px;
+}
+
+.loginForm {
+	margin-left: 5px;
+	padding: 50px;
+	background-color: #001A71;
+	height: 300px;
+}
+
+input[type=text],
+input[type=password],
+select {
+	margin: 0;
+	margin-top: 10px;
+	border-bottom:none;
+	background-color:white;
+	text-indent:10px;
+	border-radius:4px;
+}*/
+
+/* <a href="http://chj.tbe.taleo.net/chj04/ats/careers/apply.jsp?org=COMPASSMINERALS&amp;cws=1" title="To fill out a general application form click here" tabindex="12">click here</a> */
+
+
+/* CAREER STYLE */
+td {
+	padding: 0;
+}
+
+select {
+	display: block;
+}
+
+.career_form_box {
+  padding: 50px;
+  padding-top: 0px;
+  margin-top: 10px !important;
+  margin-bottom: 0px;
+  height: 320px;
+}
+
+.career_form_box h4 {
+  color: #001A71;
+}
+
+.career_form_box #career_form_btnSearch,
+.career_form_box #career_form_btnLogin {
+  border-radius: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #00ACED;
+  color: white;
+  float: right;
+  border: none;
+}
+
+input[name="tbe_cws_submit"] {
+  border-radius: 100px !important;
+  padding-top: 8px !important;
+  padding-bottom: 10px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  background-color: #00ACED !important;
+  color: white !important;
+  float: right !important;
+  border: none !important;
+  font-size: 14px !important;
+  margin-top: 10px !important;
+}
+
+#career_form_jobs {
+  position: relative;
+  background-color: #dddddd;
+  margin-right: 10px !important;
+}
+.medium #career_form_jobs,
+.small #career_form_jobs,
+.tiny #career_form_jobs {
+  margin-right: 0px;
+}
+
+#career_form_btnSearch {
+  margin-top: 40px !important;
+}
+.tiny #career_form_btnSearch {
+  margin-top: 8px;
+}
+
+#career_form_genapp {
+  position: absolute;
+  bottom: 30px;
+}
+
+#career_form_login {
+  background-color: #00ACED;
+}
+.medium #career_form_login,
+.small #career_form_login,
+.tiny #career_form_login {
+  margin-left: 0px;
+}
+
+#career_form_login_subtext {
+  width: 490px;
+  margin-top: 10px;
+  margin-right: 150px;
+  float:left;
+}
+
+.medium #career_form_login_subtext,
+.small #career_form_login_subtext,
+.tiny #career_form_login_subtext {
+  width: 100%;
+}
+
+#career_form_login p {
+  color: white;
+}
+
+#career_form_login a {
+  color: #001A71;
+}
+
+.career_table_title {
+	cursor:pointer;
+}
+
+#career_form_login #career_form_btnLogin {
+  background-color: #001A71;
+  width: 115px;
+  text-align: center;
+}
+
+.keywords-input {
+	margin-top:15px !important;
+}
+
+/*#jobpost_desc {
+	padding: 15px;
+}
+
+#jobpost_desc p {
+	margin: 10px;
+}
+
+#jobpost_desc li {
+	margin: 10px;
+	margin-left: 30px;
+	list-style: initial;
+}*/
+
+/*#form_applicant_data {
+	padding: 40px;
+	background-color: #E4E4E4;
+	display: none;
+}
+
+#form_applicant_data h3,
+#form_applicant_data h5 {
+	color: #001A71;
+}
+
+#form_applicant_data .browser-default,
+#form_applicant_data p {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#form_applicant_data label {
+	color: #00ACED;
+}
+
+#form_applicant_data textarea {
+	background-color: white;
+	border: none;
+}
+
+#form_applicant_data select {
+	margin-bottom: 15px;
+}
+
+#form_applicant_data #resume {
+	height: 150px;
+}
+
+#form_applicant_data select.yesno {
+	width: 150px;
+}
+
+#form_applicant_data #highest_ed {
+	width: 275px;
+}*/
+
+input[type=text],
+input[type=password],
+select {
+	margin: 0;
+	margin-top: 10px;
+	border-bottom:none;
+	background-color:white;
+	text-indent:10px;
+	border-radius:4px;
+}
+
+td input[type=text], td input[type=password], td select{
+	border: 1px solid #666;
+}
+
+td.right {
+	margin-top: 10px;
+	float: left !important;
+}
+
+td.left {
+	float: none !important;
+}
+
+/*thead {
+  color: #001A71;
+}
+
+tr:nth-child(even) {
+ background-color: #E4E4E4;
+}
+
+th {
+  background-color: #E4E4E4;
+  border-right: 1px dotted #00ACED;
+}
+th:first-of-type {
+  padding-left: 30px;
+}
+th:last-of-type {
+  padding-right: 30px;
+  border-right: none;
+}
+th:not(:first-of-type) {
+  text-align: center !important;
+}
+
+td {
+  border-right: 1px dotted #00ACED;
+}
+td:first-of-type {
+  padding-left: 30px;
+}
+td:last-of-type {
+  padding-right: 30px;
+  border-right: none;
+}
+td:not(:first-of-type) {
+  text-align: center !important;
+}
+
+td h5 {
+  color: #00ACED;
+}
+
+td p {
+  color: #8F8F8F;
+}*/
+
+/*.career_table_desc {
+	display: none;
+}*/

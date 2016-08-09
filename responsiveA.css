@@ -1,0 +1,42 @@
+/* Who We Are */
+.small .home_img .home_img_large p,
+.tiny .home_img .home_img_large p {
+	font-size: 16px;
+}
+
+.small .home_img_large span,
+.tiny .home_img_large span {
+	font-size: 18px;
+}
+
+.medium #core_values_box h3,
+.small #core_values_box h3,
+.tiny #core_values_box h3 {
+	font-size: 2.5em;
+}
+
+.medium #core_values_box h5,
+.small #core_values_box h5,
+.tiny #core_values_box h5 {
+	margin-left:  30px;
+}
+
+.medium #core_values_box p,
+.small #core_values_box p,
+.tiny #core_values_box p {
+	margin-left: 30px;
+}
+
+.medium #compass_to_the_core_img,
+.small #compass_to_the_core_img,
+.tiny #compass_to_the_core_img {
+	margin-left: 30px;
+	width: 60%;
+}
+
+/* Corporate Responsibility */
+.medium .cg_sb_img,
+.small .cg_sb_img,
+.tiny .cg_sb_img {
+	display: none;
+}

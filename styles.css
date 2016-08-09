@@ -1,0 +1,902 @@
+/*.tooltipster-default{border:1px solid #DDDDDD;background:#FFFFFF;color:#666666;text-align:center}.tooltipster-default .tooltipster-content{font-family:'Univers',sans-serif;font-size:14px;line-height:16px;padding:1.5em 3em 1em;overflow:hidden}.tooltipster-default .tooltipster-content h2{font-weight:300;font-size:20px;margin:0;line-height:1.3em;text-transform:uppercase;white-space:nowrap}.tooltipster-default .tooltipster-content .txt-blue-lt{color:#00A4E5}.tooltipster-default .tooltipster-content .txt-orange{color:#F0A244}.tooltipster-default .tooltipster-content .txt-green-dk{color:#5A621A}.tooltipster-default .tooltipster-content .txt-green-lt{color:#56A929}.tooltipster-default .tooltipster-content .txt-blue{color:#1076C0}.tooltipster-default .tooltipster-content .txt-blue-dk{color:#091A72}.tooltipster-default .tooltipster-content .txt-red{color:#D5552A}.tooltipster-default .tooltipster-content .txt-grey{color:#898B8E}.tooltipster-default .tooltipster-content .dashed-underline{border-bottom:1px dashed #898B8E;display:inline-block;width:auto;clear:both;margin:0 0 0.5em}.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border{}.tooltipster-icon{cursor:help;margin-left:4px}.tooltipster-base{padding:0;font-size:0;line-height:0;position:absolute;left:0;top:0;z-index:9999999;pointer-events:none;width:auto;overflow:visible}.tooltipster-base .tooltipster-content{overflow:hidden}.tooltipster-arrow{display:block;text-align:center;width:100%;height:100%;position:absolute;top:0;left:0;z-index:-1}.tooltipster-arrow span,.tooltipster-arrow-border{display:block;width:0;height:0;position:absolute}.tooltipster-arrow-top span,.tooltipster-arrow-top-right span,.tooltipster-arrow-top-left span{border-left:8px solid transparent !important;border-right:8px solid transparent !important;border-top:8px solid;bottom:-7px}.tooltipster-arrow-top .tooltipster-arrow-border,.tooltipster-arrow-top-right .tooltipster-arrow-border,.tooltipster-arrow-top-left .tooltipster-arrow-border{border-left:9px solid transparent !important;border-right:9px solid transparent !important;border-top:9px solid;bottom:-7px}.tooltipster-arrow-bottom span,.tooltipster-arrow-bottom-right span,.tooltipster-arrow-bottom-left span{border-left:8px solid transparent !important;border-right:8px solid transparent !important;border-bottom:8px solid;top:-7px}.tooltipster-arrow-bottom .tooltipster-arrow-border,.tooltipster-arrow-bottom-right .tooltipster-arrow-border,.tooltipster-arrow-bottom-left .tooltipster-arrow-border{border-left:9px solid transparent !important;border-right:9px solid transparent !important;border-bottom:9px solid;top:-7px}.tooltipster-arrow-top span,.tooltipster-arrow-top .tooltipster-arrow-border,.tooltipster-arrow-bottom span,.tooltipster-arrow-bottom .tooltipster-arrow-border{left:0;right:0;margin:0 auto}.tooltipster-arrow-top-left span,.tooltipster-arrow-bottom-left span{left:6px}.tooltipster-arrow-top-left .tooltipster-arrow-border,.tooltipster-arrow-bottom-left .tooltipster-arrow-border{left:5px}.tooltipster-arrow-top-right span,.tooltipster-arrow-bottom-right span{right:6px}.tooltipster-arrow-top-right .tooltipster-arrow-border,.tooltipster-arrow-bottom-right .tooltipster-arrow-border{right:5px}.tooltipster-arrow-left span,.tooltipster-arrow-left .tooltipster-arrow-border{border-top:8px solid transparent !important;border-bottom:8px solid transparent !important;border-left:8px solid;top:50%;margin-top:-7px;right:-7px}.tooltipster-arrow-left .tooltipster-arrow-border{border-top:9px solid transparent !important;border-bottom:9px solid transparent !important;border-left:9px solid;margin-top:-8px}.tooltipster-arrow-right span,.tooltipster-arrow-right .tooltipster-arrow-border{border-top:8px solid transparent !important;border-bottom:8px solid transparent !important;border-right:8px solid;top:50%;margin-top:-7px;left:-7px}.tooltipster-arrow-right .tooltipster-arrow-border{border-top:9px solid transparent !important;border-bottom:9px solid transparent !important;border-right:9px solid;margin-top:-8px}.tooltipster-fade{opacity:0;-webkit-transition-property:opacity;-moz-transition-property:opacity;-o-transition-property:opacity;-ms-transition-property:opacity;transition-property:opacity}.tooltipster-fade-show{opacity:1}.tooltipster-grow{-webkit-transform:scale(0, 0);-moz-transform:scale(0, 0);-o-transform:scale(0, 0);-ms-transform:scale(0, 0);transform:scale(0, 0);-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;-ms-transition-property:-ms-transform;transition-property:transform;-webkit-backface-visibility:hidden}.tooltipster-grow-show{-webkit-transform:scale(1, 1);-moz-transform:scale(1, 1);-o-transform:scale(1, 1);-ms-transform:scale(1, 1);transform:scale(1, 1);-webkit-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1);-webkit-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);-moz-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);-ms-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);-o-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15)}.tooltipster-swing{opacity:0;-webkit-transform:rotateZ(4deg);-moz-transform:rotateZ(4deg);-o-transform:rotateZ(4deg);-ms-transform:rotateZ(4deg);transform:rotateZ(4deg);-webkit-transition-property:-webkit-transform,opacity;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;-ms-transition-property:-ms-transform;transition-property:transform}.tooltipster-swing-show{opacity:1;-webkit-transform:rotateZ(0deg);-moz-transform:rotateZ(0deg);-o-transform:rotateZ(0deg);-ms-transform:rotateZ(0deg);transform:rotateZ(0deg);-webkit-transition-timing-function:cubic-bezier(0.23, 0.635, 0.495, 1);-webkit-transition-timing-function:cubic-bezier(0.23, 0.635, 0.495, 2.4);-moz-transition-timing-function:cubic-bezier(0.23, 0.635, 0.495, 2.4);-ms-transition-timing-function:cubic-bezier(0.23, 0.635, 0.495, 2.4);-o-transition-timing-function:cubic-bezier(0.23, 0.635, 0.495, 2.4);transition-timing-function:cubic-bezier(0.23, 0.635, 0.495, 2.4)}.tooltipster-fall{top:0;-webkit-transition-property:top;-moz-transition-property:top;-o-transition-property:top;-ms-transition-property:top;transition-property:top;-webkit-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1);-webkit-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);-moz-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);-ms-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);-o-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15)}.tooltipster-fall.tooltipster-dying{-webkit-transition-property:all;-moz-transition-property:all;-o-transition-property:all;-ms-transition-property:all;transition-property:all;top:0px !important;opacity:0}.tooltipster-slide{left:-40px;-webkit-transition-property:left;-moz-transition-property:left;-o-transition-property:left;-ms-transition-property:left;transition-property:left;-webkit-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1);-webkit-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);-moz-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);-ms-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);-o-transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15);transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.15)}.tooltipster-slide.tooltipster-dying{-webkit-transition-property:all;-moz-transition-property:all;-o-transition-property:all;-ms-transition-property:all;transition-property:all;left:0px !important;opacity:0}.tooltipster-content-changing{opacity:0.5;-webkit-transform:scale(1.1, 1.1);-moz-transform:scale(1.1, 1.1);-o-transform:scale(1.1, 1.1);-ms-transform:scale(1.1, 1.1);transform:scale(1.1, 1.1)}.map-locations{background:#1076C0;width:100%;font-family:"Univers",sans-serif}.map-locations *{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;word-wrap:break-word}.map-locations .clear{width:100%;clear:both}.map-locations .desktop-only{display:block !important}.map-locations .mobile-only{display:none !important}.map-locations .v-align{top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.map-locations .icons{background:url(../images/icons.svg) no-repeat;background-size:316px 110px;-webkit-transition:opacity 0.2s linear;-moz-transition:opacity 0.2s linear;-o-transition:opacity 0.2s linear;transition:opacity 0.2s linear;width:29px;height:34px;display:inline-block}.map-locations .icons.icon-green-dk{background-position:0px 0px}.map-locations .icons.icon-green-lt{background-position:-30px 0px}.map-locations .icons.icon-blue{background-position:-240px 0px}.map-locations .icons.icon-blue-dk{background-position:-60px 0px}.map-locations .icons.icon-red{background-position:-90px 0px}.map-locations .icons.icon-grey{background-position:-120px 0px}.map-locations .icons.icon-orange{background-position:-150px 0px}.map-locations .icons.icon-green-lt-orange{background-position:-180px 0px}.map-locations .icons.icon-orange-blue-dk{background-position:-210px 0px}.map-locations .icons.icon-headquarters{background-position:-270px 0px;width:46px;height:54px}.map-locations .icons.icon-carat{background-position:0 -60px;background-size:229px 83px;width:20px;height:14px}.map-locations .icons.icon-green-dk,.map-locations .icons.icon-green-lt,.map-locations .icons.icon-blue,.map-locations .icons.icon-blue-dk,.map-locations .icons.icon-red,.map-locations .icons.icon-grey,.map-locations .icons.icon-orange,.map-locations .icons.icon-green-lt-orange,.map-locations .icons.icon-orange-blue,.map-locations .icons.icon-headquarters{z-index:2}.map-locations .icons.icon-green-dk:hover,.map-locations .icons.icon-green-dk.active,.map-locations .icons.icon-green-lt:hover,.map-locations .icons.icon-green-lt.active,.map-locations .icons.icon-blue:hover,.map-locations .icons.icon-blue.active,.map-locations .icons.icon-blue-dk:hover,.map-locations .icons.icon-blue-dk.active,.map-locations .icons.icon-red:hover,.map-locations .icons.icon-red.active,.map-locations .icons.icon-grey:hover,.map-locations .icons.icon-grey.active,.map-locations .icons.icon-orange:hover,.map-locations .icons.icon-orange.active,.map-locations .icons.icon-green-lt-orange:hover,.map-locations .icons.icon-green-lt-orange.active,.map-locations .icons.icon-orange-blue:hover,.map-locations .icons.icon-orange-blue.active,.map-locations .icons.icon-headquarters:hover,.map-locations .icons.icon-headquarters.active{opacity:0}.map-locations .icons.icon-on-green-dk{background-position:0px -40px}.map-locations .icons.icon-on-green-lt{background-position:-30px -40px}.map-locations .icons.icon-on-blue{background-position:-240px -40px}.map-locations .icons.icon-on-blue-dk{background-position:-60px -40px}.map-locations .icons.icon-on-red{background-position:-90px -40px}.map-locations .icons.icon-on-grey{background-position:-120px -40px}.map-locations .icons.icon-on-orange{background-position:-150px -40px}.map-locations .icons.icon-on-green-lt-orange{background-position:-180px -40px}.map-locations .icons.icon-on-orange-blue-dk{background-position:-210px -40px}.map-locations .icons.icon-on-headquarters{background-position:-270px -56px;width:46px;height:54px}.map-locations .icons.icon-on-green-dk,.map-locations .icons.icon-on-green-lt,.map-locations .icons.icon-on-blue,.map-locations .icons.icon-on-red,.map-locations .icons.icon-on-grey,.map-locations .icons.icon-on-orange,.map-locations .icons.icon-on-green-lt-orange,.map-locations .icons.icon-on-orange-blue,.map-locations .icons.icon-on-headquarters{z-index:1}.map-locations .maxwidth{width:100%;max-width:1200px;margin:0 auto;position:relative}.map-locations .maxwidth .img-shell{margin:0 auto}.map-locations .maxwidth .img-shell img{max-width:100%;height:auto;display:block}.map-locations .maxwidth .img-shell .location{-webkit-transform-origin:center bottom;-moz-transform-origin:center bottom;-ms-transform-origin:center bottom;-o-transform-origin:center bottom;transform-origin:center bottom;z-index:10;cursor:pointer}.map-locations .maxwidth .img-shell .location.ogden-utah{left:19.66%;top:48.15%}.map-locations .maxwidth .img-shell .location.unity-saskatchewan{left:25%;top:22.92%}.map-locations .maxwidth .img-shell .location.wynyard-saskatchewan{left:29.08%;top:25.69%}.map-locations .maxwidth .img-shell .location.lyons-kansas{left:36.16%;top:55.64%}.map-locations .maxwidth .img-shell .location.winnipeg-manitoba{left:37.58%;top:28.8%}.map-locations .maxwidth .img-shell .location.overland-park-kansas{left:41.08%;top:53.55%}.map-locations .maxwidth .img-shell .location.overland-park-kansas .icons{bottom:0;left:-23px}.map-locations .maxwidth .img-shell .location.duluth-minnesota{left:43%;top:35.71%}.map-locations .maxwidth .img-shell .location.cote-blanche-louisiana{left:45.08%;top:73.27%}.map-locations .maxwidth .img-shell .location.kenosha-wisconsin{left:47.66%;top:43.2%}.map-locations .maxwidth .img-shell .location.chicago-illinois{left:49.33%;top:45.96%}.map-locations .maxwidth .img-shell .location.goderich-ontario{left:56.08%;top:40.55%}.map-locations .maxwidth .img-shell .location.mississauga-ontario{left:58.5%;top:39.17%}.map-locations .maxwidth .img-shell .location.buffalo-new-york{left:60.25%;top:41.7%}.map-locations .maxwidth .img-shell .location.montreal-quebec{left:64.58%;top:32.83%}.map-locations .maxwidth .img-shell .location.amherst-nova-scotia{left:75.41%;top:29.37%}.map-locations .maxwidth .img-shell .location.winsford-cheshire-UK{left:90.33%;top:9.56%}.map-locations .maxwidth .img-shell .location.london-UK{left:93.66%;top:13.36%}.map-locations .maxwidth .img-shell .location .icons{bottom:0;left:-14px}.map-locations .maxwidth .locations-legends{width:360px;height:auto;position:absolute;right:20px;bottom:100px;color:#fff;font-size:13px;line-height:1.38461em}.map-locations .maxwidth .locations-legends .title-shell{margin-bottom:14px;font-size:18px;line-height:1em}.map-locations .maxwidth .locations-legends .title-shell .dash{background:url(../images/dash.png) center center repeat-x;width:60px;height:18px;display:inline-block;float:left}.map-locations .maxwidth .locations-legends .title-shell .title{margin:0 12px;display:inline-block;float:left}.map-locations .maxwidth .locations-legends .location-types{width:100%;height:auto;font-weight:300}.map-locations .maxwidth .locations-legends .location-types .half{width:50%;float:left;padding-right:1em}.map-locations .maxwidth .locations-legends .location-types .type{padding:11px 0;position:relative}.map-locations .maxwidth .locations-legends .location-types .type label{position:relative;padding-left:26px;display:inline-block}.map-locations .maxwidth .locations-legends .location-types .type label:before{content:'';background-color:#222;width:12px;height:12px;border:2px solid #fff;position:absolute;left:0;top:-1px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%}.map-locations .maxwidth .locations-legends .location-types .type ul{display:none}.map-locations .maxwidth .locations-legends .location-types .type.headquarters label:before{background-color:#00A4E5}.map-locations .maxwidth .locations-legends .location-types .type.underground-salt-mining label:before{background-color:#F0A244}.map-locations .maxwidth .locations-legends .location-types .type.solar-evaporation label:before{background-color:#5A621A}.map-locations .maxwidth .locations-legends .location-types .type.mechanical-evaporation label:before{background-color:#56A929}.map-locations .maxwidth .locations-legends .location-types .type.ion-exchange label:before{background-color:#1076C0}.map-locations .maxwidth .locations-legends .location-types .type.storage-records-management label:before{background-color:#091A72}.map-locations .maxwidth .locations-legends .location-types .type.sales-office label:before{background-color:#D5552A}.map-locations .maxwidth .locations-legends .location-types .type.packaging-facilities label:before{background-color:#898B8E}@media only screen and (min-width: 0px) and (max-width: 1040px){.map-locations{background:#1076C0;width:100%;font-family:"Univers",sans-serif}.map-locations .maxwidth .locations-legends{width:300px;right:20px;bottom:20px}}@media only screen and (min-width: 0px) and (max-width: 920px){.map-locations .desktop-only{display:none !important}.map-locations .mobile-only{display:inline-block !important}.map-locations .maxwidth .img-shell .desktop-only{display:block !important}.map-locations .maxwidth .img-shell .mobile-only{display:none !important}.map-locations .maxwidth .img-shell .location{-webkit-transform:scale(0.75);-ms-transform:scale(0.75);transform:scale(0.75)}.map-locations .maxwidth .locations-legends{width:100%;height:auto;position:static;right:0px;bottom:auto;float:left;}.map-locations .maxwidth .locations-legends .title-shell{display:none}.map-locations .maxwidth .locations-legends .location-types{width:100%;height:auto;font-weight:300;background-color:#fff}.map-locations .maxwidth .locations-legends .location-types .half{width:100%;float:none;padding-right:0em}.map-locations .maxwidth .locations-legends .location-types .type{padding:0;position:relative}.map-locations .maxwidth .locations-legends .location-types .type label{position:relative;padding:0 0 0 26px;height:90px;line-height:90px;font-size:2.46154em;display:block;background-color:#fff;color:#000;border-bottom:1px solid #ddd;cursor:pointer}.map-locations .maxwidth .locations-legends .location-types .type label *{vertical-align:middle}.map-locations .maxwidth .locations-legends .location-types .type label .icons{margin-right:0.75em}.map-locations .maxwidth .locations-legends .location-types .type label .icons:hover{opacity:1}.map-locations .maxwidth .locations-legends .location-types .type label .icons.icon-headquarters{width:29px;height:34px;background-size:316px 68px;background-position:-228px 0px}.map-locations .maxwidth .locations-legends .location-types .type label .icons.icon-carat{right:1em;margin-right:0;-webkit-transform-origin:center 25%;-moz-transform-origin:center 25%;-ms-transform-origin:center 25%;-o-transform-origin:center 25%;transform-origin:center 25%;-webkit-transition:all 0.2s linear;-moz-transition:all 0.2s linear;-o-transition:all 0.2s linear;transition:all 0.2s linear}.map-locations .maxwidth .locations-legends .location-types .type label:before{display:none}.map-locations .maxwidth .locations-legends .location-types .type ul{overflow:hidden;height:auto;display:block;max-height:0px;-webkit-transition:all 0.3s linear;-moz-transition:all 0.3s linear;-o-transition:all 0.3s linear;transition:all 0.3s linear;color:#666;background:#F6F6F6;list-style:none;padding:0;margin:0}.map-locations .maxwidth .locations-legends .location-types .type ul li{font-size:2.15385em;font-weight:500;line-height:70px;height:70px;list-style:none;border-bottom:1px solid #ddd;padding-left:1em}.map-locations .maxwidth .locations-legends .location-types .type.headquarters label{color:#00A4E5}.map-locations .maxwidth .locations-legends .location-types .type.underground-salt-mining label{color:#F0A244}.map-locations .maxwidth .locations-legends .location-types .type.solar-evaporation label{color:#5A621A}.map-locations .maxwidth .locations-legends .location-types .type.mechanical-evaporation label{color:#56A929}.map-locations .maxwidth .locations-legends .location-types .type.ion-exchange label{color:#1076C0}.map-locations .maxwidth .locations-legends .location-types .type.storage-records-management label{color:#091A72}.map-locations .maxwidth .locations-legends .location-types .type.sales-office label{color:#D5552A}.map-locations .maxwidth .locations-legends .location-types .type.packaging-facilities{color:#898B8E}.map-locations .maxwidth .locations-legends .location-types .type.open label .icon-carat{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.map-locations .maxwidth .locations-legends .location-types .type.open ul{max-height:1000px}}@media only screen and (max-width: 620px){.map-locations .maxwidth .img-shell .desktop-only{display:none !important}.map-locations .maxwidth .img-shell .mobile-only{display:block !important}.map-locations .maxwidth .img-shell .location{-webkit-transform:scale(0.5);-ms-transform:scale(0.5);transform:scale(0.5)}.map-locations .maxwidth .img-shell .location.ogden-utah{left:19.66%;top:48.15%}.map-locations .maxwidth .img-shell .location.unity-saskatchewan{left:25%;top:22.92%}.map-locations .maxwidth .img-shell .location.wynyard-saskatchewan{left:29.08%;top:26.69%}.map-locations .maxwidth .img-shell .location.lyons-kansas{left:36.16%;top:64.64%}.map-locations .maxwidth .img-shell .location.winnipeg-manitoba{left:37.58%;top:31.8%}.map-locations .maxwidth .img-shell .location.overland-park-kansas{left:41.08%;top:61.55%}.map-locations .maxwidth .img-shell .location.duluth-minnesota{left:43%;top:39.71%}.map-locations .maxwidth .img-shell .location.cote-blanche-louisiana{left:45.08%;top:85.27%}.map-locations .maxwidth .img-shell .location.kenosha-wisconsin{left:47.66%;top:49.2%}.map-locations .maxwidth .img-shell .location.chicago-illinois{left:49.33%;top:51.96%}.map-locations .maxwidth .img-shell .location.goderich-ontario{left:56.08%;top:45.55%}.map-locations .maxwidth .img-shell .location.mississauga-ontario{left:58.5%;top:44.17%}.map-locations .maxwidth .img-shell .location.buffalo-new-york{left:60.25%;top:46.7%}.map-locations .maxwidth .img-shell .location.montreal-quebec{left:64.58%;top:36.83%}.map-locations .maxwidth .img-shell .location.amherst-nova-scotia{left:75.41%;top:32.57%}.map-locations .maxwidth .img-shell .location.winsford-cheshire-UK{left:90.33%;top:8.56%}.map-locations .maxwidth .img-shell .location.london-UK{left:93.66%;top:12.39%}.map-locations .maxwidth .locations-legends .location-types .type label{padding:0 0 0 13px;height:70px;line-height:70px;font-size:1.2308em}.map-locations .maxwidth .locations-legends .location-types .type ul li{font-size:1.08192em;font-weight:500;line-height:60px;height:60px}}body{background:#fff;margin:0}.absolute{position:absolute}.relative{position:relative}*/
+
+.tooltipster-default {
+    border: 1px solid #DDDDDD;
+    background: #FFFFFF;
+    color: #666666;
+    text-align: center 
+}
+.tooltipster-default .tooltipster-content {
+    font-family: 'Univers', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 1.5em 3em 1em;
+    overflow: hidden
+}
+.tooltipster-default .tooltipster-content h2 {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    white-space: nowrap
+}
+.tooltipster-default .tooltipster-content a:hover {
+	color: #b0c135;
+}
+.tooltipster-default .tooltipster-content .txt-blue-lt {
+    color: #00A4E5
+}
+.tooltipster-default .tooltipster-content .txt-orange {
+    color: #F0A244
+}
+.tooltipster-default .tooltipster-content .txt-green-dk {
+    color: #5A621A
+}
+.tooltipster-default .tooltipster-content .txt-green-lt {
+    color: #56A929
+}
+.tooltipster-default .tooltipster-content .txt-blue {
+    color: #1076C0
+}
+.tooltipster-default .tooltipster-content .txt-blue-dk {
+    color: #091A72
+}
+.tooltipster-default .tooltipster-content .txt-red {
+    color: #D5552A
+}
+.tooltipster-default .tooltipster-content .txt-grey {
+    color: #898B8E
+}
+.tooltipster-default .tooltipster-content .dashed-underline {
+    border-bottom: 1px dashed #898B8E;
+    display: inline-block;
+    width: auto;
+    clear: both;
+    margin: 0 0 0.5em
+}
+.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border {}.tooltipster-icon {
+    cursor: help;
+    margin-left: 4px
+}
+.tooltipster-base {
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    pointer-events: none;
+    width: auto;
+    overflow: visible
+}
+.tooltipster-base .tooltipster-content {
+    overflow: hidden
+}
+.tooltipster-arrow {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1
+}
+.tooltipster-arrow span,
+.tooltipster-arrow-border {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute
+}
+.tooltipster-arrow-top span,
+.tooltipster-arrow-top-right span,
+.tooltipster-arrow-top-left span {
+    border-left: 8px solid transparent !important;
+    border-right: 8px solid transparent !important;
+    border-top: 8px solid;
+    bottom: -7px
+}
+.tooltipster-arrow-top .tooltipster-arrow-border,
+.tooltipster-arrow-top-right .tooltipster-arrow-border,
+.tooltipster-arrow-top-left .tooltipster-arrow-border {
+    border-left: 9px solid transparent !important;
+    border-right: 9px solid transparent !important;
+    border-top: 9px solid;
+    bottom: -7px
+}
+.tooltipster-arrow-bottom span,
+.tooltipster-arrow-bottom-right span,
+.tooltipster-arrow-bottom-left span {
+    border-left: 8px solid transparent !important;
+    border-right: 8px solid transparent !important;
+    border-bottom: 8px solid;
+    top: -7px
+}
+.tooltipster-arrow-bottom .tooltipster-arrow-border,
+.tooltipster-arrow-bottom-right .tooltipster-arrow-border,
+.tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+    border-left: 9px solid transparent !important;
+    border-right: 9px solid transparent !important;
+    border-bottom: 9px solid;
+    top: -7px
+}
+.tooltipster-arrow-top span,
+.tooltipster-arrow-top .tooltipster-arrow-border,
+.tooltipster-arrow-bottom span,
+.tooltipster-arrow-bottom .tooltipster-arrow-border {
+    left: 0;
+    right: 0;
+    margin: 0 auto
+}
+.tooltipster-arrow-top-left span,
+.tooltipster-arrow-bottom-left span {
+    left: 6px
+}
+.tooltipster-arrow-top-left .tooltipster-arrow-border,
+.tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+    left: 5px
+}
+.tooltipster-arrow-top-right span,
+.tooltipster-arrow-bottom-right span {
+    right: 6px
+}
+.tooltipster-arrow-top-right .tooltipster-arrow-border,
+.tooltipster-arrow-bottom-right .tooltipster-arrow-border {
+    right: 5px
+}
+.tooltipster-arrow-left span,
+.tooltipster-arrow-left .tooltipster-arrow-border {
+    border-top: 8px solid transparent !important;
+    border-bottom: 8px solid transparent !important;
+    border-left: 8px solid;
+    top: 50%;
+    margin-top: -7px;
+    right: -7px
+}
+.tooltipster-arrow-left .tooltipster-arrow-border {
+    border-top: 9px solid transparent !important;
+    border-bottom: 9px solid transparent !important;
+    border-left: 9px solid;
+    margin-top: -8px
+}
+.tooltipster-arrow-right span,
+.tooltipster-arrow-right .tooltipster-arrow-border {
+    border-top: 8px solid transparent !important;
+    border-bottom: 8px solid transparent !important;
+    border-right: 8px solid;
+    top: 50%;
+    margin-top: -7px;
+    left: -7px
+}
+.tooltipster-arrow-right .tooltipster-arrow-border {
+    border-top: 9px solid transparent !important;
+    border-bottom: 9px solid transparent !important;
+    border-right: 9px solid;
+    margin-top: -8px
+}
+.tooltipster-fade {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    -ms-transition-property: opacity;
+    transition-property: opacity
+}
+.tooltipster-fade-show {
+    opacity: 1
+}
+.tooltipster-grow {
+    -webkit-transform: scale(0, 0);
+    -moz-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    -ms-transition-property: -ms-transform;
+    transition-property: transform;
+    -webkit-backface-visibility: hidden
+}
+.tooltipster-grow-show {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15)
+}
+.tooltipster-swing {
+    opacity: 0;
+    -webkit-transform: rotateZ(4deg);
+    -moz-transform: rotateZ(4deg);
+    -o-transform: rotateZ(4deg);
+    -ms-transform: rotateZ(4deg);
+    transform: rotateZ(4deg);
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    -ms-transition-property: -ms-transform;
+    transition-property: transform
+}
+.tooltipster-swing-show {
+    opacity: 1;
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+    -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 1);
+    -webkit-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+    -moz-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+    -ms-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+    -o-transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4);
+    transition-timing-function: cubic-bezier(0.23, 0.635, 0.495, 2.4)
+}
+.tooltipster-fall {
+    top: 0;
+    -webkit-transition-property: top;
+    -moz-transition-property: top;
+    -o-transition-property: top;
+    -ms-transition-property: top;
+    transition-property: top;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15)
+}
+.tooltipster-fall.tooltipster-dying {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -ms-transition-property: all;
+    transition-property: all;
+    top: 0px !important;
+    opacity: 0
+}
+.tooltipster-slide {
+    left: -40px;
+    -webkit-transition-property: left;
+    -moz-transition-property: left;
+    -o-transition-property: left;
+    -ms-transition-property: left;
+    transition-property: left;
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15);
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.15)
+}
+.tooltipster-slide.tooltipster-dying {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    -ms-transition-property: all;
+    transition-property: all;
+    left: 0px !important;
+    opacity: 0
+}
+.tooltipster-content-changing {
+    opacity: 0.5;
+    -webkit-transform: scale(1.1, 1.1);
+    -moz-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1)
+}
+.map-locations {
+    background: #1076C0;
+    width: 100%;
+    font-family: "Univers", sans-serif
+}
+.map-locations * {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    word-wrap: break-word
+}
+.map-locations .clear {
+    width: 100%;
+    clear: both
+}
+.map-locations .desktop-only {
+    display: block !important
+}
+.map-locations .mobile-only {
+    display: none !important
+}
+.map-locations .v-align {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+.map-locations .icons {
+    background: url(../images/icons.svg) no-repeat;
+    background-size: 316px 110px;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    width: 29px;
+    height: 34px;
+    display: inline-block
+}
+.map-locations .icons.icon-green-dk {
+    background-position: 0px 0px
+}
+.map-locations .icons.icon-green-lt {
+    background-position: -30px 0px
+}
+.map-locations .icons.icon-blue {
+    background-position: -240px 0px
+}
+.map-locations .icons.icon-blue-dk {
+    background-position: -60px 0px
+}
+.map-locations .icons.icon-red {
+    background-position: -90px 0px
+}
+.map-locations .icons.icon-grey {
+    background-position: -120px 0px
+}
+.map-locations .icons.icon-orange {
+    background-position: -150px 0px
+}
+.map-locations .icons.icon-green-lt-orange {
+    background-position: -180px 0px
+}
+.map-locations .icons.icon-orange-blue-dk {
+    background-position: -210px 0px
+}
+.map-locations .icons.icon-headquarters {
+    background-position: -270px 0px;
+    width: 46px;
+    height: 54px
+}
+.map-locations .icons.icon-carat {
+    background-position: 0 -60px;
+    background-size: 229px 83px;
+    width: 20px;
+    height: 14px
+}
+.map-locations .icons.icon-green-dk,
+.map-locations .icons.icon-green-lt,
+.map-locations .icons.icon-blue,
+.map-locations .icons.icon-blue-dk,
+.map-locations .icons.icon-red,
+.map-locations .icons.icon-grey,
+.map-locations .icons.icon-orange,
+.map-locations .icons.icon-green-lt-orange,
+.map-locations .icons.icon-orange-blue,
+.map-locations .icons.icon-headquarters {
+    z-index: 2
+}
+.map-locations .icons.icon-green-dk:hover,
+.map-locations .icons.icon-green-dk.active,
+.map-locations .icons.icon-green-lt:hover,
+.map-locations .icons.icon-green-lt.active,
+.map-locations .icons.icon-blue:hover,
+.map-locations .icons.icon-blue.active,
+.map-locations .icons.icon-blue-dk:hover,
+.map-locations .icons.icon-blue-dk.active,
+.map-locations .icons.icon-red:hover,
+.map-locations .icons.icon-red.active,
+.map-locations .icons.icon-grey:hover,
+.map-locations .icons.icon-grey.active,
+.map-locations .icons.icon-orange:hover,
+.map-locations .icons.icon-orange.active,
+.map-locations .icons.icon-green-lt-orange:hover,
+.map-locations .icons.icon-green-lt-orange.active,
+.map-locations .icons.icon-orange-blue:hover,
+.map-locations .icons.icon-orange-blue.active,
+.map-locations .icons.icon-headquarters:hover,
+.map-locations .icons.icon-headquarters.active {
+    opacity: 0
+}
+.map-locations .icons.icon-on-green-dk {
+    background-position: 0px -40px
+}
+.map-locations .icons.icon-on-green-lt {
+    background-position: -30px -40px
+}
+.map-locations .icons.icon-on-blue {
+    background-position: -240px -40px
+}
+.map-locations .icons.icon-on-blue-dk {
+    background-position: -60px -40px
+}
+.map-locations .icons.icon-on-red {
+    background-position: -90px -40px
+}
+.map-locations .icons.icon-on-grey {
+    background-position: -120px -40px
+}
+.map-locations .icons.icon-on-orange {
+    background-position: -150px -40px
+}
+.map-locations .icons.icon-on-green-lt-orange {
+    background-position: -180px -40px
+}
+.map-locations .icons.icon-on-orange-blue-dk {
+    background-position: -210px -40px
+}
+.map-locations .icons.icon-on-headquarters {
+    background-position: -270px -56px;
+    width: 46px;
+    height: 54px
+}
+.map-locations .icons.icon-on-green-dk,
+.map-locations .icons.icon-on-green-lt,
+.map-locations .icons.icon-on-blue,
+.map-locations .icons.icon-on-red,
+.map-locations .icons.icon-on-grey,
+.map-locations .icons.icon-on-orange,
+.map-locations .icons.icon-on-green-lt-orange,
+.map-locations .icons.icon-on-orange-blue,
+.map-locations .icons.icon-on-headquarters {
+    z-index: 1
+}
+.map-locations .maxwidth {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative
+}
+.map-locations .maxwidth .img-shell {
+    margin: 0 auto;
+    float: left;
+}
+.map-locations .maxwidth .img-shell img {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+.map-locations .maxwidth .img-shell .location {
+    -webkit-transform-origin: center bottom;
+    -moz-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    -o-transform-origin: center bottom;
+    transform-origin: center bottom;
+    z-index: 10;
+    cursor: pointer
+}
+.map-locations .maxwidth .img-shell .location.ogden-utah {
+    left: 19.66%;
+    top: 49.15%
+}
+.map-locations .maxwidth .img-shell .location.unity-saskatchewan {
+    left: 25%;
+    top: 12.92%
+}
+.map-locations .maxwidth .img-shell .location.wynyard-saskatchewan {
+    left: 29.08%;
+    top: 16.69%
+}
+.map-locations .maxwidth .img-shell .location.lyons-kansas {
+    left: 36.16%;
+    top: 60%;
+}
+.map-locations .maxwidth .img-shell .location.winnipeg-manitoba {
+    left: 37.58%;
+    top: 20.8%
+}
+.map-locations .maxwidth .img-shell .location.overland-park-kansas {
+    left: 41.08%;
+    top: 56.55%
+}
+.map-locations .maxwidth .img-shell .location.overland-park-kansas .icons {
+    bottom: 0;
+    left: -23px
+}
+.map-locations .maxwidth .img-shell .location.duluth-minnesota {
+    left: 43%;
+    top: 31.71%
+}
+.map-locations .maxwidth .img-shell .location.cote-blanche-louisiana {
+    left: 45.08%;
+    top: 85.27%
+}
+.map-locations .maxwidth .img-shell .location.kenosha-wisconsin {
+    left: 47.66%;
+    top: 42.2%
+}
+.map-locations .maxwidth .img-shell .location.chicago-illinois {
+    left: 49.33%;
+    top: 45.96%
+}
+.map-locations .maxwidth .img-shell .location.goderich-ontario {
+    left: 56.08%;
+    top: 38.55%
+}
+.map-locations .maxwidth .img-shell .location.mississauga-ontario {
+    left: 58.5%;
+    top: 36.17%
+}
+.map-locations .maxwidth .img-shell .location.buffalo-new-york {
+    left: 60.25%;
+    top: 39.7%
+}
+.map-locations .maxwidth .img-shell .location.montreal-quebec {
+    left: 64.58%;
+    top: 26.83%
+}
+.map-locations .maxwidth .img-shell .location.amherst-nova-scotia {
+    left: 75.41%;
+    top: 22.37%
+}
+.map-locations .maxwidth .img-shell .location.winsford-cheshire-UK {
+    left: 93.33%;
+    top: 21.8%;
+}
+.map-locations .maxwidth .img-shell .location.london-UK {
+  	left: 95.9%;
+    top: 27.5%;
+}
+.map-locations .maxwidth .img-shell .location .icons {
+    bottom: 0;
+    left: -14px
+}
+.map-locations .maxwidth .locations-legends {
+    width: 360px;
+    height: auto;
+    position: absolute;
+    right: -8px;
+    bottom: 100px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.38461em;
+    float: left;
+}
+.map-locations .maxwidth .locations-legends .title-shell {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 1em
+}
+.map-locations .maxwidth .locations-legends .title-shell .dash {
+    background: url(../images/dash.png) center center repeat-x;
+    width: 60px;
+    height: 18px;
+    display: inline-block;
+    float: left
+}
+.map-locations .maxwidth .locations-legends .title-shell .title {
+    margin: 0 12px;
+    display: inline-block;
+    float: left
+}
+.map-locations .maxwidth .locations-legends .location-types {
+    width: 100%;
+    height: auto;
+    font-weight: 300
+}
+.map-locations .maxwidth .locations-legends .location-types .half {
+    width: 50%;
+    float: left;
+    padding-right: 1em
+}
+.map-locations .maxwidth .locations-legends .location-types .type {
+    padding: 11px 0;
+    position: relative
+}
+.map-locations .maxwidth .locations-legends .location-types .type label {
+    position: relative;
+    padding-left: 26px;
+    font-size: 14px;
+    color: white;
+    display: inline-block
+}
+.map-locations .maxwidth .locations-legends .location-types .type label:before {
+    content: '';
+    background-color: #222;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%
+}
+.map-locations .maxwidth .locations-legends .location-types .type ul {
+    display: none
+}
+.map-locations .maxwidth .locations-legends .location-types .type.headquarters label:before {
+    background-color: #00A4E5
+}
+.map-locations .maxwidth .locations-legends .location-types .type.underground-salt-mining label:before {
+    background-color: #F0A244
+}
+.map-locations .maxwidth .locations-legends .location-types .type.solar-evaporation label:before {
+    background-color: #5A621A
+}
+.map-locations .maxwidth .locations-legends .location-types .type.mechanical-evaporation label:before {
+    background-color: #56A929
+}
+.map-locations .maxwidth .locations-legends .location-types .type.ion-exchange label:before {
+    background-color: #1076C0
+}
+.map-locations .maxwidth .locations-legends .location-types .type.storage-records-management label:before {
+    background-color: #091A72
+}
+.map-locations .maxwidth .locations-legends .location-types .type.sales-office label:before {
+    background-color: #D5552A
+}
+.map-locations .maxwidth .locations-legends .location-types .type.packaging-facilities label:before {
+    background-color: #898B8E
+}
+@media only screen and (min-width: 0px) and (max-width: 1040px) {
+    .map-locations {
+        background: #1076C0;
+        width: 100%;
+        font-family: "Univers", sans-serif
+    }
+    .map-locations .maxwidth .locations-legends {
+        width: 300px;
+        right: 20px;
+        bottom: 20px
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 920px) {
+    .map-locations .desktop-only {
+        display: none !important
+    }
+    .map-locations .mobile-only {
+        display: inline-block !important
+    }
+    .map-locations .maxwidth .img-shell .desktop-only {
+        display: block !important
+    }
+    .map-locations .maxwidth .img-shell .mobile-only {
+        display: none !important
+    }
+    .map-locations .maxwidth .img-shell .location {
+        -webkit-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+        transform: scale(0.75)
+    }
+    .map-locations .maxwidth .locations-legends {
+        width: 100%;
+        height: auto;
+        position: static;
+        right: 0px;
+        bottom: auto
+    }
+    .map-locations .maxwidth .locations-legends .title-shell {
+        display: none
+    }
+    .map-locations .maxwidth .locations-legends .location-types {
+        width: 100%;
+        height: auto;
+        font-weight: 300;
+        background-color: #fff
+    }
+    .map-locations .maxwidth .locations-legends .location-types .half {
+        width: 100%;
+        float: none;
+        padding-right: 0em
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type {
+        padding: 0;
+        position: relative
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type label {
+        position: relative;
+        padding: 0 0 0 26px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 2.46154em;
+        display: block;
+        background-color: #fff;
+        color: #000;
+        border-bottom: 1px solid #ddd;
+        cursor: pointer
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type label * {
+        vertical-align: middle
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type label .icons {
+        margin-right: 0.75em
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type label .icons:hover {
+        opacity: 1
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type label .icons.icon-headquarters {
+        width: 29px;
+        height: 34px;
+        background-size: 316px 68px;
+        background-position: -228px 0px
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type label .icons.icon-carat {
+        right: 1em;
+        margin-right: 0;
+        -webkit-transform-origin: center 25%;
+        -moz-transform-origin: center 25%;
+        -ms-transform-origin: center 25%;
+        -o-transform-origin: center 25%;
+        transform-origin: center 25%;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type label:before {
+        display: none
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type ul {
+        overflow: hidden;
+        height: auto;
+        display: block;
+        max-height: 0px;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+        color: #666;
+        background: #F6F6F6;
+        list-style: none;
+        padding: 0;
+        margin: 0
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type ul li {
+    	color: #666;
+        font-size: 2.15385em;
+        font-weight: 500;
+        line-height: 70px;
+        height: 70px;
+        list-style: none;
+        border-bottom: 1px solid #ddd;
+        padding-left: 1em
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type ul a:hover li {
+    	color: #039be5;
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type.headquarters label {
+        color: #00A4E5
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type.underground-salt-mining label {
+        color: #F0A244
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type.solar-evaporation label {
+        color: #5A621A
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type.mechanical-evaporation label {
+        color: #56A929
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type.ion-exchange label {
+        color: #1076C0
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type.storage-records-management label {
+        color: #091A72
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type.sales-office label {
+        color: #D5552A
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type.packaging-facilities {
+        color: #898B8E
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type.open label .icon-carat {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type.open ul {
+        max-height: 1000px
+    }
+}
+@media only screen and (max-width: 620px) {
+    .map-locations .maxwidth .img-shell .desktop-only {
+        display: none !important
+    }
+    .map-locations .maxwidth .img-shell .mobile-only {
+        display: block !important
+    }
+    .map-locations .maxwidth .img-shell .location {
+        -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5)
+    }
+    .map-locations .maxwidth .img-shell .location.ogden-utah {
+        left: 19.66%;
+        top: 49.15%;
+    }
+    .map-locations .maxwidth .img-shell .location.unity-saskatchewan {
+        left: 25%;
+        top: 13.92%
+    }
+    .map-locations .maxwidth .img-shell .location.wynyard-saskatchewan {
+        left: 29.08%;
+        top: 17.69%
+    }
+    .map-locations .maxwidth .img-shell .location.lyons-kansas {
+        left: 36.16%;
+        top: 60.64%
+    }
+    .map-locations .maxwidth .img-shell .location.winnipeg-manitoba {
+        left: 37.58%;
+        top: 22.8%
+    }
+    .map-locations .maxwidth .img-shell .location.overland-park-kansas {
+        left: 41.08%;
+        top: 57.55%
+    }
+    .map-locations .maxwidth .img-shell .location.duluth-minnesota {
+        left: 43%;
+        top: 31.71%
+    }
+    .map-locations .maxwidth .img-shell .location.cote-blanche-louisiana {
+        left: 45.08%;
+        top: 85.27%
+    }
+    .map-locations .maxwidth .img-shell .location.kenosha-wisconsin {
+        left: 47.66%;
+        top: 43.2%
+    }
+    .map-locations .maxwidth .img-shell .location.chicago-illinois {
+        left: 49.33%;
+        top: 46.96%
+    }
+    .map-locations .maxwidth .img-shell .location.goderich-ontario {
+        left: 56.08%;
+        top: 36.55%
+    }
+    .map-locations .maxwidth .img-shell .location.mississauga-ontario {
+        left: 58.5%;
+        top: 35.17%
+    }
+    .map-locations .maxwidth .img-shell .location.buffalo-new-york {
+        left: 60.25%;
+        top: 39.7%
+    }
+    .map-locations .maxwidth .img-shell .location.montreal-quebec {
+        left: 64.58%;
+        top: 27.83%
+    }
+    .map-locations .maxwidth .img-shell .location.amherst-nova-scotia {
+        left: 75.41%;
+        top: 23.57%
+    }
+    .map-locations .maxwidth .img-shell .location.winsford-cheshire-UK {
+        left: 93.33%;
+		top: 22.44%;
+    }
+    .map-locations .maxwidth .img-shell .location.london-UK {
+        left: 96.0%;;
+    	top: 27.39%;
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type label {
+        padding: 0 0 0 13px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 1.2308em
+    }
+    .map-locations .maxwidth .locations-legends .location-types .type ul li {
+        font-size: 1.08192em;
+        font-weight: 500;
+        line-height: 60px;
+        height: 60px
+    }
+}
+body {
+    background: #fff;
+    margin: 0
+}
+.absolute {
+    position: absolute
+}
+.relative {
+    position: relative
+}

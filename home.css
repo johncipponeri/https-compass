@@ -1,0 +1,529 @@
+/* MATERIALIZE OVERRIDE */
+.row .col.triblock {
+  padding: 0 !important;
+}
+
+/* NASDAQ AREA */
+
+#graph_placeholder {
+    width:100%;
+    height:200px;
+    float:left;
+}
+
+.tiny #graph_placeholder,
+.small #graph_placeholder {
+    height:265px;
+    float:left;
+}
+
+
+#nasdaq_area {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  height: 450px;
+}
+
+#nasdaq h4 {
+  background-color: #0076BF;
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.large #nasdaq h4,
+.large #investor_news h4,
+.large #nasdaq_sideblock h4  {
+  font-size:18px;
+  height:42px;
+  line-height:42px;
+  padding:0px;
+}
+
+.medium #nasdaq h4,
+.medium #investor_news h4,
+.medium #nasdaq_sideblock h4  {
+  font-size:16px;
+  height:42px;
+  line-height:42px;
+  padding:0px;
+}
+
+.tiny #nasdaq h4,
+.tiny #investor_news h4,
+.tiny #nasdaq_sideblock h4  {
+  font-size:16px;
+  height:42px;
+  line-height:42px;
+  padding:0px;
+}
+
+#nasdaq {
+  position:relative;
+  background-color: #00ACED;
+  height: 450px;
+  padding: 0;
+}
+
+.tiny #nasdaq,
+.small #nasdaq {
+  height:650px;
+}
+.medium #nasdaq {
+  /*padding-bottom:10px;*/
+}
+
+#nasdaq_info {
+  margin: 0 auto;
+}
+
+#nasdaq_sideblock_container {
+  padding-right: 0px;
+}
+
+.nasdaq_sideblock {
+  height: 450px;
+  background-color: #E8E8E8;
+  position: relative;
+}
+
+.nasdaq_sideblock .row {
+  margin-bottom: 14px;
+}
+
+.nasdaq_sideblock_viewall {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+.nasdaq_sideblock h4 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #00ACED;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin:0 0 10px 0;
+}
+
+.nasdaq_sideblock a.right {
+  color: white;
+  background-color: #00ACED;
+  border-radius: 1000px;
+  width: 120px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-right: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nasdaq_sideblock hr {
+  width: 95%;
+  height: -1px;
+  border-color: #00ACED;
+  background-color: #00ACED;
+  color: #00ACED;
+}
+
+/* NASDAQ_RIGHT Style */
+.nasdaq_price_stockabrv {
+  color: #8F8F8F;
+  font-size: 25px;
+  line-height: 20px;
+}
+
+.nasdaq_exchange_range {
+  color: white;
+  font-size: 15px;
+}
+
+.nasdaq_exchange_range_value {
+  float: right;
+  margin-right: 105px;
+  color: white;
+}
+
+/* Event Calendar */
+#event_cal {
+  /*margin-top: -17px;*/
+  padding: 0;
+  padding-right: 8px;
+}
+
+.tiny #event_cal,
+.small #event_cal,
+.medium #event_cal {
+  padding-right:0px;
+  padding-bottom:10px;
+}
+
+#event_cal p {
+  color: #666666;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+.tiny #event_cal p {
+  font-size:14px; line-height:16px;
+}
+.small #event_cal p {
+  font-size:14px; line-height:16px;
+}
+.medium #event_cal p {
+  font-size:16px; line-height:20px;
+}
+.large #event_cal p {
+  font-size:12px; line-height:14px;
+}
+.xlarge #event_cal p {
+  font-size:14px; line-height:14px;
+}
+
+
+#event_cal h5 {
+  margin-top: 4px;
+  margin-left: 10px;
+  color: #00ACED;
+  font-size: 18px;
+}
+
+#event_cal_date {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  line-height: 38px;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+.large #event_cal_day {
+    float: left;
+    font-size: 30px;
+    line-height: 30px;
+    width: 100%;
+    height: 50%;
+    margin-top: -5px;
+    padding-bottom: 10px;
+}
+
+.tiny #event_cal_date {
+    width:62px;
+}
+.small #event_cal_date,
+.medium #event_cal_date {
+  /*padding-bottom:10px;*/
+}
+
+.large #event_cal_date {
+  width:80px;
+  height:80px;
+}
+
+/* Investor News */
+#investor_news {
+  /*margin-top: -17px;*/
+  padding: 0;
+  padding-right: 8px;
+}
+
+.tiny #investor_news,
+.small #investor_news {
+  padding:0 0 10px 0;
+}
+.medium #investor_news {
+  /*padding-bottom:10px;*/
+}
+
+.investor_news_body:not(:first-of-type) {
+  padding-top: 10px;
+}
+
+/* :nth-child(-n+3) => Skip all multiples of 3 (3, 6, 9, 12 ...) */
+.investor_news_body:nth-child(-n+3) {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #00ACED;
+}
+
+#investor_news h4 {
+  background-color: #001A71;
+}
+
+.investor_news_body {
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.investor_news_heading {
+  font-size: 20px;
+  line-height:20px;
+}
+
+.tiny .investor_news_heading {
+  font-size: 14px; line-height:16px;
+}
+.small .investor_news_heading {
+  font-size: 14px; line-height:16px;
+}
+.medium .investor_news_heading {
+  font-size: 16px; line-height:16px;
+}
+.large .investor_news_heading {
+  font-size: 16px; line-height:16px;
+}
+.xlarge .investor_news_heading {
+  font-size: 16px; line-height:18px;
+}
+
+#investor_news_pdf_image {
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+/* CONTACT */
+#contact_block {
+  background-image: url(../img/ContactBlock_1608x426.png);
+  background-size: auto 100%;
+  background-position: center;
+  max-width: 1600px;
+  height: 426px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#contact_block_inner {
+  margin: 0 auto;
+  font-family: 'UniversLTPro-55Roman', sans-serif;
+  font-size: 20.5px;
+}
+
+#contact_block_inner h2 {
+  font-family: 'UniversLTPro-55Roman', sans-serif;
+  font-size: 50px;
+}
+
+#contact_number {
+  font-family: 'UniversLTPro-65Bold', sans-serif;
+}
+
+#contact_block_inner a {
+  font-family: 'UniversLTPro-55Roman', sans-serif;
+  font-size: 27px;
+}
+
+/* TRIBLOCK */
+.triblock {
+  position: relative;
+  height: 400px;
+  margin-bottom: -10px;
+  text-transform: uppercase;
+}
+
+.tiny .box {
+  margin-bottom:0px;
+  margin-right:0px !important;
+  margin-top:10px;
+}
+
+.tiny .triblock,
+.small .triblock {
+  /*margin-top:10px;*/
+  margin-bottom:0px;
+  margin-right:0px !important;
+}
+
+.medium .triblock {
+  margin-top:10px;
+  margin-bottom:0;
+}
+
+
+.small .triblock.box {
+  margin-top:10px;
+}
+
+.small .triblock_row {
+  margin-bottom:10px;
+}
+
+
+
+.triblock img {
+  width: 100%;
+  /*height: 120px;*/
+  height:auto;
+}
+
+.triblock a {
+  background-color: #001A71;
+  border-radius: 100px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 65px;
+  padding-right: 65px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.large .triblock a {
+  background-color: #001A71;
+  border-radius: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  padding-right: 45px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.triblock h2 {
+  font-family: 'UniversLTPro-55Roman', sans-serif;
+  font-size: 48px;
+  margin: 0;
+}
+
+.tiny .triblock h2 { font-size: 32px; padding: 0 40px;}
+.small .triblock h2 { font-size: 42px; padding: 0 40px;}
+.medium .triblock h2 { font-size: 42px; }
+.large .triblock h2 { font-size: 32px; }
+.xlarge .triblock h2 { font-size: 34px; }
+
+
+.triblock-image {
+    height: 100px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.triblock_button {
+  margin-top: 0px;
+  position: absolute;
+  bottom: 52px;
+  width: 280px;
+  left: calc(50% - 140px);
+}
+/*
+#triblock_cg .triblock_button {
+  margin-top: 20px;
+}
+
+#triblock_ir .triblock_button {
+  margin-top: 20px;
+}
+
+#triblock_ld .triblock_button {
+  margin-top: 52px;
+}
+
+#triblock_sc .triblock_button {
+  margin-top: 23px;
+}*/
+
+#triblock_cg {
+  margin-left: 5px;
+  border-bottom: 10px solid #001A71;
+}
+
+.tiny #triblock_cg,
+.small #triblock_cg {
+  margin-left: 0px;
+}
+
+#triblock_cg h2 {
+  color: #001A71;
+  margin-top: 50px;
+}
+
+#triblock_cg a {
+  background-color: #001A71;
+}
+
+#triblock_ir {
+  margin-right: 5px;
+  border-bottom: 10px solid #00ACED;
+}
+
+#triblock_ir h2 {
+  color: #00ACED;
+  margin-top: 50px;
+}
+
+#triblock_ir a {
+  background-color: #00ACED;
+}
+
+#triblock_borders_double {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-left: 1px dotted #00ACED;
+  border-right: 1px dotted #00ACED;
+}
+
+.tiny #triblock_borders_double,
+.small #triblock_borders_double {
+   padding-left: 0px;
+   padding-right: 0px;
+   border-left: none;
+   border-right: none;
+}
+
+.medium #triblock_borders_double {
+   padding-left: 5px;
+   padding-right: 0px;
+   border-left: none;
+   border-right: none;
+}
+
+#triblock_borders_single {
+  padding-left: 5px;
+  border-right: 1px dotted #00ACED;
+}
+
+.tiny #triblock_borders_single,
+.small #triblock_borders_single {
+  padding-left: 0;
+  padding-right:0;
+  border-right: none;
+}
+
+.medium #triblock_borders_single {
+  padding-left: 0;
+  border-right: none;
+}
+
+#triblock_ld {
+  border-bottom: 10px solid #D4552A;
+}
+
+#triblock_ld h2 {
+  color: #D4552A;
+  margin-top: 72px;
+}
+
+#triblock_ld a {
+  background-color: #D4552A;
+}
+
+#triblock_sc {
+  margin-right: 5px;
+  border-bottom: 10px solid #B4BB31;
+}
+
+#triblock_sc h2 {
+  color: #B4BB31;
+  margin-top: 72px;
+}
+
+#triblock_sc a {
+  background-color: #B4BB31;
+}

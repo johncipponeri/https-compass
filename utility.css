@@ -1,0 +1,41 @@
+.OFF { display:none !important; }
+.abs, .absolute { position:absolute; }
+.rel, .relative { position:relative; float:left;}
+.fl, .float-left { float:left; }
+.fr, .float-right { float:right; }
+
+.fh, .fill-height { height:100%;}
+.fw, .fill-width { width:100%;}
+
+
+/* 
+ * Fade Text
+ */
+
+
+.text_clamp_white {
+	position:relative;
+}
+
+.text_clamp_white:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 28px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+}
+
+/*
+ * Color Scheme
+ */
+
+.gray_bg {
+	background-color:#e7e7e7;
+}
+
+#wpadminbar {
+	max-width:100%;
+}
